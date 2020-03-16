@@ -42,38 +42,37 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   
     <link rel="manifest" href="/manifest.json">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
-  <body>
-    <img src="assets/logo.png" height="100px"/>
-    <text style="font-family: cursive; color: tomato; font-size: 72px;">SpiceKraft</text>
-    <table>
-      <tr style="font-family: fantasy; font-size: 36px;">
-        <td>
-          <a style="text-decoration: none; color: brown;" href="/index.html">Home</a>
-          <div>
-            <h1 style="text-align: center; font-family: monospace; color: red;">Welcome to the SpiceKraft</h1>
-            <p style="text-align: center; font-family: monospace; color: red;">the obverse (pictured) depicts the showman P. T. Barnum, who was one of Bridgeport's most famous residents, mayor of the city, helped develop it, and is buried there. Bridgeport authorities wanted a commemorative coin, and authorizing legislation passed Congress without opposition. Kreis had designed the Connecticut Tercentenary half dollar (1935), and he produced designs showing Barnum and a modernistic eagle similar to the one on the Connecticut piece. The coins were vended to the public beginning in September 1936 at a price of $2. Too late for most of the centennial celebrations, the coins sold well. Unsold pieces were bought up by coin dealers and wholesale quantities were available on the secondary market until the 1970s. The</p>
-          </div>
-        </td>
-        <td>
-          <a style="text-decoration: none; color: brown;" href="/about.html">About</a>
-          <div>
-            <h1 style="text-align: center; font-family: monospace; color: red;">We Are Humans!</h1>
-            <p style="text-align: center; font-family: monospace; color: red;">the obverse (pictured) depicts the showman P. T. Barnum, who was one of Bridgeport's most famous residents, mayor of the city, helped develop it, and is buried there. Bridgeport authorities wanted a commemorative coin, and authorizing legislation passed Congress without opposition. Kreis had designed the Connecticut Tercentenary half dollar (1935), and he produced designs showing Barnum and a modernistic eagle similar to the one on the Connecticut piece. The coins were vended to the public beginning in September 1936 at a price of $2. Too late for most of the centennial celebrations, the coins sold well. Unsold pieces were bought up by coin dealers and wholesale quantities were available on the secondary market until the 1970s. The</p>
-          </div>
-        </td>
-        <td>
-          <a style="text-decoration: none; color: brown;" href="/menu.html">Menu</a>
-          <div>
-            <h1 style="text-align: center; font-family: monospace; color: red;">A Spicy food menu here!</h1>
-          </div>
-        </td>
-        <td>
-          <a style="text-decoration: none; color: brown;" href="/login.html">Login</a>
-        </td>
-      </tr>
-    </table>
+  <body style="background-color: darkred;">
+    <nav style="font-family: fantasy; font-size: 36px;">
+      <img onclick="popItUp('home');" style="cursor: pointer;" src="assets/logo.png" height="100px"/>
+      <text onclick="popItUp('home');" style="font-family: cursive; color: tomato; font-size: 72px; cursor: pointer;">SpiceKraft</text>  
+      <text onclick="popItUp('about');" style="text-decoration: none; color: white; cursor: pointer;">About</text>
+      <text onclick="popItUp('menu');" style="text-decoration: none; color: white; cursor: pointer;">Menu</a>
+      <text onclick="popItUp('login');" style="text-decoration: none; color: white; cursor: pointer;">Login</a>  
+    </nav>
+
+    <div id="home" style="display: block;">
+      <!-- THIS IS HOME PAGE -->
+      <h1 style="text-align: center; font-family: monospace; color: whitesmoke;">Welcome to the SpiceKraft</h1>
+      <p style="text-align: center; font-family: monospace; color: whitesmoke;">the obverse (pictured) depicts the showman P. T. Barnum, who was one of Bridgeport's most famous residents, mayor of the city, helped develop it, and is buried there. Bridgeport authorities wanted a commemorative coin, and authorizing legislation passed Congress without opposition. Kreis had designed the Connecticut Tercentenary half dollar (1935), and he produced designs showing Barnum and a modernistic eagle similar to the one on the Connecticut piece. The coins were vended to the public beginning in September 1936 at a price of $2. Too late for most of the centennial celebrations, the coins sold well. Unsold pieces were bought up by coin dealers and wholesale quantities were available on the secondary market until the 1970s. The</p>
+    </div>
+    <div id="about" style="display: none;">
+      <!-- THIS IS ABOUT PAGE -->
+      <h1 style="text-align: center; font-family: monospace; color: whitesmoke;">We Are Humans!</h1>
+      <p style="text-align: center; font-family: monospace; color: whitesmoke;">the obverse (pictured) depicts the showman P. T. Barnum, who was one of Bridgeport's most famous residents, mayor of the city, helped develop it, and is buried there. Bridgeport authorities wanted a commemorative coin, and authorizing legislation passed Congress without opposition. Kreis had designed the Connecticut Tercentenary half dollar (1935), and he produced designs showing Barnum and a modernistic eagle similar to the one on the Connecticut piece. The coins were vended to the public beginning in September 1936 at a price of $2. Too late for most of the centennial celebrations, the coins sold well. Unsold pieces were bought up by coin dealers and wholesale quantities were available on the secondary market until the 1970s. The</p>
+    </div>
+    <div id="menu" style="display: none;">
+      <!-- THIS IS MENU PAGE -->
+      <h1 style="text-align: center; font-family: monospace; color: whitesmoke;">A Spicy food menu here!</h1>
+    </div>
+    <div id="login" style="display: none;">
+      <!-- THIS IS LOGIN PAGE -->
+    </div>
+
 
     <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
 
@@ -100,6 +99,6 @@
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
   </script>
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
