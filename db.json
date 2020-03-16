@@ -1,0 +1,46 @@
+{
+ "menu": {
+    "starter": [
+        {
+            "name": "tomato soup",
+            "price": 70,
+            "price_unit": "INR",
+            "image": "https://firebasestorage.googleapis.com/v0/b/spicekraft-67a6d.appspot.com/o/dish.png?alt=media&token=7435b4a9-380c-402b-abcc-b7604190a965"
+        },
+        {
+            "name": "green salad",
+            "price": 100,
+            "price_unit": "INR",
+            "image": "https://firebasestorage.googleapis.com/v0/b/spicekraft-67a6d.appspot.com/o/dish.png?alt=media&token=7435b4a9-380c-402b-abcc-b7604190a965"
+        }
+    ],
+    "main": [
+        {
+            "name": "idli",
+            "price": 70,
+            "price_unit": "INR",
+            "image": "https://firebasestorage.googleapis.com/v0/b/spicekraft-67a6d.appspot.com/o/dish.png?alt=media&token=7435b4a9-380c-402b-abcc-b7604190a965"
+        },
+        {
+            "name": "dosa",
+            "price": 80,
+            "price_unit": "INR",
+            "image": "https://firebasestorage.googleapis.com/v0/b/spicekraft-67a6d.appspot.com/o/dish.png?alt=media&token=7435b4a9-380c-402b-abcc-b7604190a965"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "choco shake",
+            "price": 120,
+            "price_unit": "INR",
+            "image": "https://firebasestorage.googleapis.com/v0/b/spicekraft-67a6d.appspot.com/o/dish.png?alt=media&token=7435b4a9-380c-402b-abcc-b7604190a965"
+        },
+        {
+            "name": "choco waffle",
+            "price": 60,
+            "price_unit": "INR",
+            "image": "https://firebasestorage.googleapis.com/v0/b/spicekraft-67a6d.appspot.com/o/dish.png?alt=media&token=7435b4a9-380c-402b-abcc-b7604190a965"
+        }
+    ]
+ }
+}
