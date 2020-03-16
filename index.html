@@ -41,6 +41,9 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   
+    <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+
     <link rel="manifest" href="/manifest.json">
 
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -50,9 +53,9 @@
     <nav style="font-family: fantasy; font-size: 36px;">
       <img onclick="popItUp('home');" style="cursor: pointer;" src="assets/logo.png" height="100px"/>
       <text onclick="popItUp('home');" style="font-family: cursive; color: tomato; font-size: 72px; cursor: pointer;">SpiceKraft</text>  
-      <text onclick="popItUp('about');" style="text-decoration: none; color: white; cursor: pointer;">About</text>
-      <text onclick="popItUp('menu');" style="text-decoration: none; color: white; cursor: pointer;">Menu</a>
-      <text onclick="popItUp('login');" style="text-decoration: none; color: white; cursor: pointer;">Login</a>  
+      <text onclick="popItUp('about');" style="color: white; cursor: pointer;">About</text>
+      <text onclick="popItUp('menu');" style="color: white; cursor: pointer;">Menu</text>
+      <text onclick="popItUp('login');" style="color: white; cursor: pointer; float: right;">Login</text>  
     </nav>
 
     <div id="home" style="display: block;">
@@ -71,6 +74,9 @@
     </div>
     <div id="login" style="display: none;">
       <!-- THIS IS LOGIN PAGE -->
+      <div id="firebaseui-auth-container"></div>
+      <div id="loader">Loading...</div>
+      <h1 style="text-align: center; font-family: monospace; color: whitesmoke;">Login in to SpiceKraft by signing in to Goolge!</h1>
     </div>
 
 
